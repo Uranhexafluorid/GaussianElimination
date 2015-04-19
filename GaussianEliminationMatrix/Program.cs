@@ -29,9 +29,9 @@ namespace GaussianEliminationMatrix
             
             // Eingabe zur Kontrolle ausgeben
             Console.WriteLine("Eingegebenes Array");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < zeilen; i++)
             {
-                for (int o = 0; o < 4; o++)
+                for (int o = 0; o < spalten; o++)
                 {
                     Console.Write(Convert.ToString(input[i, o]) + " ");
                 }
@@ -44,9 +44,9 @@ namespace GaussianEliminationMatrix
 
             // Ausgabe von RowReduce in Konsole ausgeben
             Console.WriteLine("Reduziertes Array");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < zeilen; i++)
             {
-                for (int o = 0; o < 4; o++)
+                for (int o = 0; o < spalten; o++)
                 {
                     Console.Write(Convert.ToString(output[i, o]) + " ");
                 }
